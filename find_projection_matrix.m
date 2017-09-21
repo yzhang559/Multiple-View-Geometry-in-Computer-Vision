@@ -33,10 +33,10 @@ function [ H ] = find_projection_matrix(original,projective)
 %check input
 [om,on]=size(original);
 [cm,cn]=size(projective);
-if ((om ~= 2) | (on ~= 4))
+if ((om ~= 2) || (on ~= 4))
     error('Invalid input original points matrix');
 end
-if ((cm ~= 2) | (cn ~= 4))
+if ((cm ~= 2) || (cn ~= 4))
     error('Invalid input projective points matrix');
 end
 
