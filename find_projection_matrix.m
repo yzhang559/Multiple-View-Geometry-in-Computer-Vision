@@ -30,7 +30,7 @@ function [ H ] = find_projection_matrix(original,projective)
 %   details.
 
 
-%check input
+% check input
 [om,on]=size(original);
 [cm,cn]=size(projective);
 if ((om ~= 2) || (on ~= 4))
